@@ -2,7 +2,7 @@ import {Text, View, StyleSheet, StatusBar } from "react-native";
 import SplashScreen from "../screens/SplashScreen";
 import {Link, useRouter } from "expo-router";
 import React, { useState, useEffect } from "react";
-import LoginScreen from "../screens/LoginScreen";
+import Onboarding from "../screens/OnboardingScreen";
 // import { StatusBar } from "expo-status-bar";
 
 const Index = ()=>{
@@ -14,7 +14,7 @@ const Index = ()=>{
     useEffect(() => {
         const timer = setTimeout(() => {
         setLoading(false);
-        router.push('/screens/LoginScreen'); 
+        router.push('/screens/OnboardingScreen'); 
         }, 3000); 
 
         return () => clearTimeout(timer); // Cleanup the timer
@@ -26,7 +26,7 @@ const Index = ()=>{
         <StatusBar barStyle="light-content" backgroundColor="#fff" />
         {loading ? <SplashScreen /> : (
             // Your main content goes here
-            < LoginScreen />
+            < Onboarding />
         )}
         </View>
 
