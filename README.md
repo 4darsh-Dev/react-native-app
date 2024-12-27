@@ -6,3 +6,6 @@ A an app build using react-native for web, ios and android platform with all fea
   --Password REset and email sending setup (Pass Recovery) :/
 2. Welcome Screen + Animation effects
 3. Home page
+4. Contribution history, -- Trees watered + tress planetd
+5. Explore : / section
+6. 
